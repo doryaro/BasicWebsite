@@ -1,21 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple website</title>
-    <link rel="stylesheet" href="main.css">
-  </head>
-  <body>
-    <h1>Task List</h1>
-    <p id="msg">Current tasks:</p>
-    <ul>
-      <li class="list">Add visual styles</li>
-      <li class="list">Add light and dark themes</li>
-      <li>Enable switching the theme</li>
-    </ul>
-    <p style="color:brown;text-shadow: chartreuse;text-align: center;"> hello </p>
-    <p> down </p>
-  </body>
-</html>
+<html>
+   <body style="background-color: deepskyblue;">
+      <head>
+        <title>Dor's website</title>
+        <script type = "text/javascript">
+          function fn1()
+          {
+            var str = document.getElementById("text1").value;  
+
+            if (str.length > 18) {
+  alert("The name may have no more than 18 characters");  
+  submitOK = "false";}  
+             
+          else if (str.length < 4) {
+  alert("The name may have no less than 4 characters");  
+  submitOK = "false";}
+                   
+         else if (str=="maya lipka" || str=="Maya Lipka" || str=="Maya lipka" || str== "maya Lipka") 
+          {window.close()
+            window.open("page1_maya.html")
+          }  
+         else if (str=="omer ravid" || str=="Omer Ravid" || str=="Omer ravid" || str=="omer Ravid") 
+          {window.close()
+            window.open("page1_omer.html")}       
+            else if (str=="aviv karido" || str=="Aviv Karido" || str=="Aviv karido" || str=="aviv Karido") 
+          {window.close()
+            window.open("page1_aviv.html")}  
+            else if (str=="guest" || str=="Guest" || str=="GUEST" || str=="\"guest\"" || str== "\"Guest\"") 
+          {window.close() 
+            window.open("page1_guest.html")}   
+               
+          else {  alert("invalid name");      
+  submitOK = "false";}    
+      }
+        </script>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dor's website</title>
+        <link rel="stylesheet" href="main.css">     
+      </head>
+      
+        
+      <form style="text-align: center;">   
+        <p style="font-size: 7ch;color: black;text-align: center;"><b>Welcome to Dor's Website</b>  </p>
+        <label style="font-size: 5ch;" for="name">Please Enter You'r Name :</label>
+        <input style="height: 3ch; width: 15ch; font-size: 3ch;text-align: center;border-radius: 8px;" id="text1" placeholder="first and last name">  
+        <br>     
+        <button style="text-align: center;font-size: 2.8ch;border-radius: 8px;" onclick="fn1()" id="btn1">Enter</button>  
+        <p style="color: black;font-size: 3ch;">You'r name Doesn't work? just Enter "Guest"</p>
+            
+      </form>  
+   </body>
+</html>          

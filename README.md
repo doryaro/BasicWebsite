@@ -1,6 +1,6 @@
 # dors_app
-newthing
-#thnefi
-bgr
+learning HTML just for fun..
+it's not that fun
 # healine
-freoe
+ 
+     
